@@ -1,0 +1,153 @@
+.App{
+  padding: 20px;
+  max-width: 100%;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    max-width: 100%;
+    background-color: #f9f9f9;
+    padding: 10px 5px;
+}
+.table-container{
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    margin-top: 10px;
+    background: white;
+    border-spacing: 10px;
+}
+
+table th{
+    text-align: left;
+}
+table td {
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: left;
+    background-color: #f9f9f9;
+}
+table td:last-child{
+    border: none;
+    padding: 5px;   
+    text-align: left;
+    background-color: white;
+
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: red;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9ff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8px;
+    color: #666;
+  }
+  
+  .search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 14px;
+    background-color: transparent;
+  }
+  
+  .action-icons {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .refresh-icon {
+    font-size: 16px;
+    cursor: pointer;
+    color: #666;
+    transition: color 0.3s;
+  }
+  
+  .refresh-icon:hover {
+    color: #333;
+  }
+
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    text-align: center;
+  }
+  
+  .modal input {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+  }
+  
+  .modal-buttons button {
+    margin: 5px;
+    padding: 10px 15px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .modal-buttons button:hover{
+    background-color: #0056b3;
+
+  }
+  
+  .add-btn {
+    margin-top: 20px;
+    margin: auto;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .add-btn:hover {
+    background-color: #0056b3;
+  }

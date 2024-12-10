@@ -1,0 +1,132 @@
+.timer-container {
+  margin: 40px auto;
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.timer-container.flashback {
+  animation: flash 0.5s ease infinite;
+}
+
+@keyframes flash {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: #ffcccc;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.inputs input {
+  width: 50px;
+  padding: 8px;
+  font-size: 1rem;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.inputs button {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.inputs button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.countdown-display h2 {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+.timer-container > .controls{
+  background-color: white;
+}
+
+.controls button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.controls button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .timer-container {
+    max-width: 90%; 
+    padding: 20px; 
+  }
+
+  .inputs input {
+    width: 40px; 
+  }
+
+  .inputs button {
+    padding: 6px 12px; 
+  }
+
+  .countdown-display h2 {
+    font-size: 1.5rem; 
+  }
+
+  .controls button {
+    padding: 8px 15px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .timer-container {
+    padding: 15px; 
+  }
+
+  .inputs input {
+    width: 35px; 
+  }
+
+  .inputs button {
+    padding: 5px 10px; 
+  }
+
+  .countdown-display h2 {
+    font-size: 1.2rem; 
+  }
+
+  .controls button {
+    padding: 6px 12px; 
+  }
+}
